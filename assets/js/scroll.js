@@ -1,12 +1,10 @@
 const smoothScrollTrigger = document.querySelectorAll('.smooth-scroll');
-console.log(smoothScrollTrigger);
 for (let i = 0; i < smoothScrollTrigger.length; i++) {
     smoothScrollTrigger[i].addEventListener('click', function (event) {
         event.preventDefault();
 
         const targetId = this.getAttribute('href');
         const targetPosition = document.querySelector(targetId).offsetTop - 30;
-        console.log(targetPosition);
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
         const duration = 200;
@@ -19,7 +17,7 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
             if (progress < duration) window.requestAnimationFrame(step);
         }
         window.requestAnimationFrame(step);
-    });
+    }, {passive: true})
 }
 
 function easeInOutCubic(t, b, c, d) {
@@ -44,5 +42,5 @@ window.addEventListener('scroll', () => {
             });
         }
     });
-});
+}, {passive: true});
 
