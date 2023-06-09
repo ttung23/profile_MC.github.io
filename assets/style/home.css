@@ -234,6 +234,37 @@ nav.navbar {
     background-color: rgba(253, 35, 173, 0.612);
 }
 
+.title-event {
+    font-family: Blacker Sans Text, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff58a9;
+}
+
+.item-event .item-event-content>img {
+    width: 100%;
+}
+
+.item-event .item-event-content-text {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #b9b9b9be;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.item-event>div:hover .item-event-content-text {
+    bottom: 0;
+    opacity: 1;
+}
+
 /* Thay đổi hình dạng của dots */
 .slick-dots {
     list-style: none;
