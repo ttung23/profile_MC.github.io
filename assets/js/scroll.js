@@ -1,7 +1,6 @@
 const smoothScrollTrigger = document.querySelectorAll('.smooth-scroll');
 for (let i = 0; i < smoothScrollTrigger.length; i++) {
     smoothScrollTrigger[i].addEventListener('click', function (event) {
-        event.preventDefault();
 
         const targetId = this.getAttribute('href');
         const targetPosition = document.querySelector(targetId).offsetTop - 30;
