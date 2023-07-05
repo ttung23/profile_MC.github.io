@@ -2,8 +2,7 @@ $('.slide').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
-    dots: true
 });

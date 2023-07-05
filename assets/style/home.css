@@ -85,10 +85,9 @@
   }
   
   .about-me {
-    background-image: url('../img/background/back_picture.svg');
+    /* background-image: url('../img/background/back_picture.svg'); */
     padding: 4rem 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
   }
   
   .about-picture {
@@ -153,7 +152,7 @@
     width: auto !important;
     color: #C81F70;
     font-size: 60px;
-    font-family: 'Parisienne';
+    font-family: Parisienne;
     letter-spacing: 2px;
   }
   
@@ -168,10 +167,10 @@
   }
   
   .picture {
-    background-image: url('../img/background/back_picture.svg');
+    /* /* background-image: url('../img/background/back_picture.svg'); */
     padding: 4rem 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat;  */
   }
   
   .picture .container>h1 {
@@ -211,10 +210,10 @@
   }
   
   .video {
-    background-image: url('../img/background/back_picture.svg');
+    /* background-image: url('../img/background/back_picture.svg'); */
     padding: 4rem 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
   }
   
   .video .container>h1 {
